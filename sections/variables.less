@@ -1,0 +1,68 @@
+@site-main-blue: #0075c3;
+@site-main-blue-darken: darken(@site-main-blue, 20%);
+
+@yb-blue: #00f;
+@yb-yellow: #ff0;
+@white: #fff;
+
+@site-secondary-red: #FF5B5B;
+
+
+//=== PU Normal navbar
+// Reset inverted navbar basics
+@navbar-pu-normal-color:                      #fff;
+@navbar-pu-normal-bg:                         @site-main-blue;
+@navbar-pu-normal-border:                     darken(@navbar-pu-normal-bg, 10%);
+
+// PU Normal navbar links
+@navbar-pu-normal-link-color:                 @navbar-pu-normal-color;
+@navbar-pu-normal-link-hover-color:           #fff;
+@navbar-pu-normal-link-hover-bg:              darken(@navbar-pu-normal-bg, 10%);
+@navbar-pu-normal-link-active-color:          @navbar-pu-normal-link-hover-color;
+@navbar-pu-normal-link-active-bg:             darken(@navbar-pu-normal-bg, 10%);
+@navbar-pu-normal-link-disabled-color:        #444;
+@navbar-pu-normal-link-disabled-bg:           transparent;
+
+// PU Normal navbar brand label
+@navbar-pu-normal-brand-color:                @navbar-pu-normal-link-color;
+@navbar-pu-normal-brand-hover-color:          #fff;
+@navbar-pu-normal-brand-hover-bg:             transparent;
+
+// PU Normal navbar toggle
+@navbar-pu-normal-toggle-hover-bg:            darken(@navbar-pu-normal-bg, 10%);;
+@navbar-pu-normal-toggle-icon-bar-bg:         #fff;
+@navbar-pu-normal-toggle-border-color:        darken(@navbar-pu-normal-bg, 10%);;
+
+
+//=== Yellow Blue navbar
+// Reset inverted navbar basics
+@navbar-yb-color:                      @yb-yellow; // Yellow
+@navbar-yb-bg:                         @yb-blue;
+@navbar-yb-border:                     darken(@navbar-yb-bg, 10%);
+
+// Yellow Blue navbar links
+@navbar-yb-link-color:                 @navbar-yb-color;
+@navbar-yb-link-hover-color:           @yb-yellow;
+@navbar-yb-link-hover-bg:              darken(@navbar-yb-bg, 20%);
+@navbar-yb-link-active-color:          @navbar-yb-link-hover-color;
+@navbar-yb-link-active-bg:             darken(@navbar-yb-bg, 20%);
+@navbar-yb-link-disabled-color:        #444;
+@navbar-yb-link-disabled-bg:           transparent;
+
+// Yellow Blue navbar brand label
+@navbar-yb-brand-color:                @navbar-yb-link-color;
+@navbar-yb-brand-hover-color:          #fff;
+@navbar-yb-brand-hover-bg:             transparent;
+
+// Yellow Blue navbar toggle
+@navbar-yb-toggle-hover-bg:            darken(@navbar-yb-bg, 20%);;
+@navbar-yb-toggle-icon-bar-bg:         #fff;
+@navbar-yb-toggle-border-color:        darken(@navbar-yb-bg, 20%);;
+
+.site-secondary-red {
+    color: @site-secondary-red !important;
+}
+
+.site-main-blue {
+    color: @site-main-blue !important;
+}

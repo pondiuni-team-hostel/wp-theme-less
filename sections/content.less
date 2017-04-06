@@ -1,0 +1,576 @@
+#content-body {
+    padding: 10px;
+    .page-heading {
+        padding: 10px;
+        border: 3px solid;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    hr {
+        border-color: @gray-light;
+    }
+    a {
+        color: inherit;
+    }
+    .admin-details {
+        font-family: serif;
+        p {
+            line-height: 1em;
+            margin: 5px 0px;
+        }
+        .btn.btn-sm.btn-pu {
+            padding: 0px 5px;
+            margin-left: 5px;
+            border: 1px solid;
+        }
+    }
+    &.pu-normal {
+        background-color: @gray-lighter;
+        color: darken(@site-main-blue, 20%);
+        .page-heading {
+            color: @site-secondary-red;
+            border-color: @site-secondary-red;
+        }
+        .admin-details {
+            .btn.btn-sm.btn-pu {
+                border-color: darken(@site-main-blue, 20%);
+                color: darken(@site-main-blue, 20%) !important;
+                &:hover, &:focus, &:active {
+                    background-color: darken(@site-main-blue, 20%);
+                    color: @white !important;
+                }
+            }
+        }
+        .hostel-type {
+            background-color: @site-main-blue;
+            color: @white;
+        }
+    }
+    &.yb {
+        background-color: @yb-blue;
+        color: @yb-yellow;
+        .admin-details {
+            .btn.btn-sm.btn-pu {
+                border-color: @yb-yellow;
+                color: @yb-yellow !important;
+                &:hover, &:focus, &:active {
+                    background-color: @yb-yellow;
+                    color: @yb-blue !important;
+                }
+            }
+        }
+        #hostel-master-list {
+            a {
+                background-color: darken(@yb-blue, 20%);
+                color: @yb-yellow;
+            }
+        }
+        .admin-staff-profile {
+            border-color: @yb-yellow;
+            h1 {
+                background-color: darken(@yb-blue, 20%);
+                color: @yb-yellow;
+            }
+            .btn {
+                background-color: darken(@yb-blue, 20%);
+                color: @yb-yellow;
+            }
+        }
+        figure#hostel-page-thumbnail figcaption {
+            background-color: darken(@yb-blue, 20%);
+            color: @yb-yellow;
+        }
+        .panel-default {
+            .panel-heading {
+                background-color: darken(@yb-blue, 20%);
+                color: @yb-yellow;
+                border-color: @yb-yellow;
+            }
+            .panel-body {
+                background-color: @yb-blue;
+                color: @yb-yellow;
+                .list-group-item {
+                    background-color: @yb-blue;
+                }
+            }
+        }
+        .foundation-stone {
+            h2, h3, h4, h5, p {
+                color: @yb-yellow;
+                border-color: @yb-yellow;
+            }
+            .hostel-type {
+                background-color: darken(@yb-blue, 20%);
+                color: @yb-yellow;
+            }
+        }
+        #hostel-accordion {
+            .slide {
+                h2 {
+                    background-color: darken(@yb-blue, 20%) !important;
+                    color: @yb-yellow !important;
+                }
+            }
+        }
+    }
+    &.bw {
+        background-color: @white;
+        color: @gray-darker;
+        .admin-details {
+            .btn.btn-sm.btn-pu {
+                border-color: @gray-darker;
+                color: @gray-darker !important;
+                &:hover, &:focus, &:active {
+                    background-color: @gray-darker;
+                    color: @white !important;
+                }
+            }
+        }
+        #hostel-master-list {
+            a {
+                background-color: @gray-lighter;
+                color: @gray-darker;
+            }
+        }
+        .admin-staff-profile {
+            border-color: @gray-lighter;
+            h1 {
+                background-color: @gray-lighter;
+                color: @gray-base;
+            }
+            .btn {
+                background-color: @gray-lighter;
+                color:  @gray-darker;
+            }
+        }
+        figure#hostel-page-thumbnail figcaption {
+            background-color: @gray-lighter;
+            color: @gray-darker;
+        }
+        .panel-default {
+            .panel-heading {
+                background-color: @gray-lighter;
+                color: @gray-darker;
+                border-color: @gray-darker;
+            }
+            .panel-body {
+                background-color: @white;
+                color: @gray-darker;
+                .list-group-item {
+                    background-color: @white;
+                }
+            }
+        }
+        .foundation-stone {
+            h2, h3, h4, h5, p {
+                color: @gray-darker;
+                border-color: @gray-darker;
+            }
+            .hostel-type {
+                background-color: @gray-lighter;
+                color: @gray-darker;
+            }
+        }
+        #hostel-accordion {
+            .slide {
+                h2 {
+                    background-color: @gray-lighter !important;
+                    color: @gray-darker !important;
+                }
+            }
+        }
+    }
+    &.wb {
+        background-color: @gray-base;
+        color: @white;
+        .admin-details {
+            .btn.btn-sm.btn-pu {
+                border-color: @white;
+                color: @white !important;
+                &:hover, &:focus, &:active {
+                    background-color: @white;
+                    color: @gray-base !important;
+                }
+            }
+        }
+        #hostel-master-list {
+            a {
+                background-color: @gray-darker;
+                color: @white;
+            }
+        }
+        .admin-staff-profile {
+            border-color: @gray-darker;
+            h1 {
+                background-color: @gray-darker;
+                color: @white;
+            }
+            .btn {
+                background-color: @gray-darker;
+                color:  @white;
+            }
+        }
+        figure#hostel-page-thumbnail figcaption {
+            background-color: @gray-darker;
+            color: @white;
+        }
+        .panel-default {
+            .panel-heading {
+                background-color: @gray-darker;
+                color: @white;
+                border-color: @white;
+            }
+            .panel-body {
+                background-color: @gray-base;
+                color: @white;
+                .list-group-item {
+                    background-color: @gray-base;
+                }
+            }
+        }
+        .foundation-stone {
+            h2, h3, h4, h5, p {
+                color: @white;
+                border-color: @white;
+            }
+            .hostel-type {
+                background-color: @gray-darker;
+                color: @white;
+            }
+        }
+        #hostel-accordion {
+            .slide {
+                h2 {
+                    background-color: @gray-darker !important;
+                    color: @white !important;
+                }
+            }
+        }
+    }
+}
+
+.admin-image {
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    margin: 0 auto;
+    box-shadow: 1px 4px 4px @gray-light;
+}
+
+article.admin-staff-profile {
+    width: 100%;
+    border: 1px solid @site-secondary-red;
+    height: 100%;
+    header {
+        margin: 0px;
+        h1 {
+            text-align: center;
+            margin: 0px;
+            padding: 10px 5px;
+            background-color: @site-secondary-red;
+            color: @white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        img.admin-profile-pic {
+            margin: 10px auto;
+            height: 120px;
+            width: 120px;
+            border-radius: 100%;
+        }
+    }
+
+    section {
+        padding: 5px;
+        line-height: 1.3em;
+        h1 {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 3px;
+            margin: 0;
+        }
+        h2, h3 {
+            font-size: 14px;
+            padding: 0px;
+            margin: 0px;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        p {
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+            .btn-sm {
+                padding: 0px 10px;
+            }
+        }
+        hr {
+            margin: 5px;
+        }
+    }
+}
+
+#warden-info {
+    article.admin-staff-profile {
+        border: 1px solid @site-main-blue;
+        border-radius: 5px;
+        header {
+            margin: 0px;
+            h1 {
+                background-color: @site-main-blue;
+            }
+        }
+    }
+}
+
+#hostel-master-list {
+    margin: 10px auto;
+    a {
+        background-color: @site-main-blue;
+        color: @white;
+    }
+    a {
+        &:hover, &:focus, &:active {
+            background-color: darken(@site-main-blue, 20%);
+        }
+    }
+    .active > a {
+        background-color: darken(@site-main-blue, 20%);
+    }
+}
+
+figure#hostel-page-thumbnail {
+    // margin-top: 10px;
+    figcaption {
+        position: relative;
+        margin-top: 10px;
+        background-color: @site-main-blue;
+        top: 0px;
+        left: 0px;
+        max-width: 100%;
+        // width: 100%;
+    }
+    img {
+        position:relative;
+        width: 100%;
+        box-shadow:0 1px 7px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+        border-radius: 5px;
+    }
+    .img:before, .img:after
+    {
+        content:"";
+        position:absolute;
+        z-index:-1;
+        box-shadow:0 0 20px rgba(0,0,0,0.8);
+        top:0;
+        bottom:0;
+        left:10px;
+        right:10px;
+        border-radius:100px / 10px;
+    }
+    .img:after
+    {
+        right:10px;
+        left:auto;
+        transform:skew(8deg) rotate(3deg);
+    }
+}
+
+.sp-slides-container, .google-maps, .ngg-gallery-img{
+    position:relative;
+    // width: 100%;
+    box-shadow:0 1px 7px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+    border-radius: 5px;
+    &:before, &:after {
+        content:"";
+        position:absolute;
+        z-index:-1;
+        box-shadow:0 0 20px rgba(0,0,0,0.8);
+        top:0;
+        bottom:0;
+        left:10px;
+        right:10px;
+        border-radius:100px / 10px;
+    }
+    &:after
+    {
+        right:10px;
+        left:auto;
+        transform:skew(8deg) rotate(3deg);
+    }
+}
+
+#panorama {
+    position:relative;
+    // width: 100%;
+    box-shadow:0 1px 7px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.4) inset;
+    border-radius: 5px;
+}
+#panorama:before, #panorama:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    border-radius:100px / 10px;
+}
+#panorama:after
+{
+    right:10px;
+    left:auto;
+    transform:skew(8deg) rotate(3deg);
+}
+
+
+/* sidebar */
+#amenities-sidebar {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* all links */
+#amenities-sidebar .nav>li>a {
+    color: darken(@site-main-blue, 20%);
+    border-left: 2px solid @site-main-blue;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 0px;
+}
+
+/* nested links */
+#amenities-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+/* active & hover links */
+#amenities-sidebar .nav>.active>a,
+#amenities-sidebar .nav>li>a:hover,
+#amenities-sidebar .nav>li>a:focus {
+    color: @site-main-blue;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 5px solid @site-main-blue;
+    border-radius: 0px;
+    -webkit-transition: all 0.7s; /* Safari */
+    transition: all 0.7s;
+}
+/* all active links */
+#amenities-sidebar .nav>.active>a,
+#amenities-sidebar .nav>.active:hover>a,
+#amenities-sidebar .nav>.active:focus>a {
+    font-weight: 700;
+}
+/* nested active links */
+#amenities-sidebar .nav .nav>.active>a,
+#amenities-sidebar .nav .nav>.active:hover>a,
+#amenities-sidebar .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
+/* hide inactive nested list */
+#amenities-sidebar .nav ul.nav {
+    display: none;
+}
+/* show active nested list */
+#amenities-sidebar .nav>.active>ul.nav {
+    display: block;
+}
+
+#amenities-sidebar > ul.affix {
+    top: 60px;
+    width: 200px;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height:400px;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+.foundation-stone {
+    text-align: center;
+    h2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0px;
+        padding: 0px;
+        font-weight: normal;
+        color: @white;
+    }
+
+    h3 {
+        padding: 0;
+        margin: 0;
+        margin-top: 5px;
+        font-weight: normal;
+        color: darken(@site-main-blue, 20%);
+        font-size: 24px;
+        border-left: 5px solid darken(@site-main-blue, 20%);
+    }
+
+    h4 {
+        margin: 0px;
+        font-weight: normal;
+        color: darken(@site-main-blue, 20%);
+        position: relative;
+        font-size: 18px;
+    }
+
+    h5 {
+        font-weight: bold;
+        color: darken(@site-main-blue, 20%);
+        position: relative;
+        font-size: 16px;
+        font-family: sans-serif;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 5px;
+        line-height: 1em;
+    }
+    p {
+        margin: 0px;
+    }
+    div {
+        background-color: transparent;
+        width: 420px;
+    }
+    hr {
+        height: 2px;
+        border-top: 2px solid @site-main-blue;
+        margin: 5px 0
+    }
+    .hostel-type-pid {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+    #warden-accordion {
+        .panel-body {
+            >.row {
+                >div{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

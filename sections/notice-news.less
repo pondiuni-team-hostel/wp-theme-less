@@ -1,0 +1,290 @@
+#notice-news {
+    section {
+        padding: 10px 30px;
+        h1.section-heading {
+            font-size: @font-size-h2;
+            .glyphicon {
+                border: 3px solid @site-secondary-red;
+                padding: 10px;
+                border-radius: 10px;
+                color: @site-secondary-red;
+            }
+            a.read-all, span.page-no {
+                float: right;
+                margin-top: 20px;
+            }
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                a {
+                    padding: 10px;
+                    min-height: 90px;
+                    display: block;
+                    text-align: justify;
+                    text-decoration: none;
+                    transition: color 0.5s, background-color 0.5s, border 0.5s;
+
+                    span {
+                        &.date {
+                            float: left;
+                            // width: 70px;
+                            // height: 70px;
+                            padding: 3px 15px;
+                            // padding: 0;
+                            margin-right: 10px;
+                            line-height: 1.2;
+                            border-radius: 10px;
+                            transition: color 0.5s, border 0.5s;
+                            >span {
+                                display: block;
+                                text-align: center;
+                                &.month {
+                                    font-size: 1.3em;
+                                    letter-spacing: 2px;
+                                }
+                                &.day {
+                                    font-size: 1.5em;
+                                    font-weight: bold;
+                                }
+                                &.year {
+                                    font-family: 'lato', sans-serif;
+                                    letter-spacing: 2px;
+                                }
+                            }
+                        }
+                        &.issued-by {
+                            display: inline-block;
+                            padding: 2px 10px;
+                            margin-bottom: 5px;
+                            border-radius: 15px;
+                            color: #fff;
+                            transition: background-color 0.5s, border 0.5s;
+                        }
+                        &.content {
+                            padding: 0;
+                            margin: 0;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Accesibility Color-Scheme Classes
+    &.pu-normal {
+        section {
+            h1.section-heading {
+                .glyphicon {
+                    border: 3px solid @site-secondary-red;
+                    color: @site-secondary-red;
+                }
+                a.read-all, span.page-no {
+                }
+            }
+            ul {
+                border-top: 5px solid @gray-lighter;
+                border-bottom: 5px solid @gray-lighter;
+                li {
+                    a {
+                        background-color: @gray-lighter;
+                        border-bottom: 1px solid @gray-light;
+                        color: @gray-dark;
+                        border-left: 5px solid @gray-lighter;
+                        border-right: 5px solid @gray-lighter;
+                        &:hover, &:focus, &:active {
+                            color: #fff;
+                            background-color: @site-secondary-red;
+                            border-left-color: @site-secondary-red;
+                            border-right-color: @site-secondary-red;
+                            border-bottom: 5px solid darken(@site-secondary-red, 20%);
+                            span {
+                                &.date {
+                                    border: 2px solid #fff;
+                                    color: #fff;
+                                }
+                                &.issued-by {
+                                    background-color: #E04949;
+                                    border-color: #E04949;
+                                }
+                            }
+                        }
+
+                        span {
+                            &.date {
+                                border: 2px solid @gray-light;
+                                color: @gray-light;
+                                >span {
+                                    &.month {
+                                    }
+                                    &.day {
+                                    }
+                                    &.year {
+                                    }
+                                }
+                            }
+                            &.issued-by {
+                                border: 1px solid @gray-light;
+                                background-color: @gray-light;
+                                color: #fff;
+                                transition: background-color 0.5s, border 0.5s;
+                            }
+                            &.content {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.yb {
+        background-color: darken(@yb-blue, 20%);
+        section {
+            color: @yb-yellow;
+            h1.section-heading {
+
+                .glyphicon {
+                    border: 3px solid @yb-yellow;
+                    color: @yb-yellow;
+                }
+                a.read-all, span.page-no {
+                    background-color: @yb-blue;
+                    color: @yb-yellow;
+                    &:hover, &:focus, &:active {
+                        font-weight: bold;
+                    }
+                }
+            }
+            ul {
+                border-top: 5px solid @yb-yellow;
+                border-bottom: 5px solid @yb-yellow;
+                li {
+                    a {
+                        background-color: @yb-blue;
+                        border-bottom: 1px solid @yb-yellow;
+                        color: @yb-yellow;
+                        border-left: 5px solid @yb-blue;
+                        border-right: 5px solid @yb-blue;
+                        &:hover, &:focus, &:active {
+                            border-bottom-width: 10px;
+                        }
+
+                        span {
+                            &.date {
+                                border: 2px solid @yb-yellow;
+                                color: @yb-yellow;
+                            }
+                            &.issued-by {
+                                border: 1px solid darken(@yb-blue, 20%);
+                                background-color: darken(@yb-blue, 20%);
+                                color: @yb-yellow;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.wb {
+        background-color: @gray-base;
+        section {
+            color: @white;
+            h1.section-heading {
+                .glyphicon {
+                    border: 3px solid @white;
+                    color: @white;
+                }
+                a.read-all, span.page-no {
+                    background-color: @gray-dark;
+                    color: @white;
+                    &:hover, &:focus, &:active {
+                        font-weight: bold;
+                    }
+                }
+            }
+            ul {
+                border-top: 5px solid @white;
+                border-bottom: 5px solid @white;
+                li {
+                    a {
+                        background-color: @gray-darker;
+                        border-bottom: 1px solid @white;
+                        color: @white;
+                        border-left: 5px solid @gray-darker;
+                        border-right: 5px solid @gray-darker;
+                        &:hover, &:focus, &:active {
+                            border-bottom-width: 10px;
+                        }
+
+                        span {
+                            &.date {
+                                border: 2px solid @white;
+                                color: @white;
+                            }
+                            &.issued-by {
+                                border: 1px solid @gray-dark;
+                                background-color: @gray-dark;
+                                color: @white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.bw {
+        background-color: @white;
+        section {
+            color: @gray-base;
+            h1.section-heading {
+                .glyphicon {
+                    border: 3px solid @gray-base;
+                    color: @gray-base;
+                }
+                a.read-all, span.page-no {
+                    background-color: @white;
+                    color: @gray-base;
+                    &:hover, &:focus, &:active {
+                        font-weight: bold;
+                    }
+                }
+            }
+            ul {
+                border-top: 5px solid @gray-base;
+                border-bottom: 5px solid @gray-base;
+                li {
+                    a {
+                        background-color: @white;
+                        border-bottom: 1px solid @gray-base;
+                        color: @gray-darker;
+                        border-left: 5px solid @white;
+                        border-right: 5px solid @white;
+                        &:hover, &:focus, &:active {
+                            border-bottom-width: 10px;
+                        }
+
+                        span {
+                            &.date {
+                                border: 2px solid @gray-base;
+                                color: @gray-base;
+                            }
+                            &.issued-by {
+                                border: 1px solid @gray-lighter;
+                                background-color: @gray-lighter;
+                                color: @gray-base;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
